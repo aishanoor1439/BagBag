@@ -1,0 +1,155 @@
+*{
+    background-color: white;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    background: transparent;
+    list-style-type: none;
+    padding: 20px 20px 0px 20px;
+    transition: background 0.4s, color 0.4s;
+}
+#navbar li {
+    margin: 0 15px;
+}
+#navbar li a {
+    border-radius: 20px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.4s, color 0.4s;
+}
+#navbar:hover {
+    background: white;
+}
+#navbar li a:hover {
+    background: #290101;
+    color: white;
+}
+#products ul {
+    display: none;
+    position: absolute;
+    left: 0%;
+    border-top: 1px #BFBFBF solid;
+    border-bottom: 1px #BFBFBF solid;
+    height: 130vw;
+    width: 100vw;
+    background: white;
+    list-style-type: none;
+    margin-top: 18.5px;
+    padding: 16px;
+    z-index: 1;
+}
+.brands {
+    font-weight: bold;
+    margin-left: 0px;
+    padding: 5px 10px;
+
+}
+.women {
+    margin-top: 45px;
+}
+#products ul li{
+    margin-left: 0px;
+}
+#products ul li a {
+    display: block;
+    background-color: transparent;
+    color: grey;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.4s, text-decoration 0.4s;
+}
+#exceptional{
+    margin-top: 50px;
+}
+#products:hover ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navbar li:focus-within ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#products ul li  a:hover {
+    background-color: transparent;
+    color: #290101;
+    text-decoration: underline;
+}
+hr{
+    width: 100vw;
+}
+
+/* title */
+#title{
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*sections */
+#faq{
+    margin-top: 100px;
+}
+#faq, #feedback {
+    max-width: 870px;
+    text-align: left;
+    padding: 0 20px;
+    margin-left:20px;
+}
+h2 {
+    border-bottom: 1px solid #333333;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.faq-item, .feedback-item, .feedback-form {
+    margin-bottom: 20px;
+}
+.faq-item h2, .feedback-item h3, .feedback-form h2 {
+    margin-bottom: 10px;
+}
+.faq-item p, .feedback-item p {
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* feedback form */
+.feedback-form label {
+    display: block;
+    color: #444444;
+    margin-bottom: 5px;
+}
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+.feedback-form button {
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.feedback-form button:hover {
+    background-color: #290101;
+}

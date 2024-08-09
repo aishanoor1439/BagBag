@@ -1,0 +1,110 @@
+*{
+  color: #333333;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    background: transparent;
+    list-style-type: none;
+    padding: 20px 20px 0px 20px;
+    transition: background 0.4s, color 0.4s;
+}
+#navbar li {
+    margin: 0 15px;
+}
+#navbar li a {
+    border-radius: 20px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.4s, color 0.4s;
+}
+#navbar:hover {
+    background: white;
+}
+#navbar li a:hover {
+    background: #290101;
+    color: white;
+}
+#products ul {
+    display: none;
+    position: absolute;
+    left: 0%;
+    border-top: 1px #BFBFBF solid;
+    border-bottom: 1px #BFBFBF solid;
+    height: 61vw;
+    width: 100vw;
+    background: white;
+    list-style-type: none;
+    margin-top: 18.5px;
+    padding: 16px;
+    z-index: 1;
+}
+.brands {
+    font-weight: bold;
+    margin-left: 0px;
+    padding: 5px 10px;
+
+}
+.women {
+    margin-top: 45px;
+}
+#products ul li{
+    margin-left: 0px;
+}
+#products ul li a {
+    display: block;
+    background-color: transparent;
+    color: grey;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.4s, text-decoration 0.4s;
+}
+#exceptional{
+    margin-top: 50px;
+}
+#products:hover ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navbar li:focus-within ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#products ul li  a:hover {
+    background-color: transparent;
+    color: #290101;
+    text-decoration: underline;
+}
+hr{
+    width: 100vw;
+}
+
+
+/* title */
+#title{
+    font-weight: bolder;
+    text-align: center;
+margin-top: 20px;
+}
+
+/*sections */
+#container {
+    max-width: 1270px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+#container h2{
+    border-bottom: #333333 1px solid;
+    font-weight: bold;
+}
