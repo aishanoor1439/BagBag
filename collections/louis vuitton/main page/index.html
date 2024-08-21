@@ -9,6 +9,79 @@
 </head>
 <body>
 
+    <!-- store -->
+    <div id="name">
+        <h1>BagBag</h1>
+        <img src="healthicons--person-outline (2).png" alt="Account" id="a">
+        <div id="account" class="store">
+            <div id="close-a" class="close"><h3>x</h1></div>
+            <form>
+                <h4 id="account-access">Get access to your Account</h4>
+                <input type="email" placeholder="E-mail address" required id="email">
+                <input type="password" placeholder="Password" required id="password">
+                <button id="sign-in">Sign in</button>
+           </form>
+           <h5>or continue with</h5>
+           <button id="google"><span style="color: blue;">G</span><span style="color: red;">o</span><span style="color: yellow;">o</span><span style="color: blue;">g</span><span style="color: green;" >l</span><span style="color: red;">e</span></button> 
+           <hr id="hr1" class="hrs">
+            <h4 id="create-account">Don't have an account?</h4>
+                <a href="../sign-up/index.html"><button id="sign-up">Sign up</button></a>
+                <hr id="hr2" class="hrs">
+        </div>
+        <img src="arcticons--heart.png" alt="Favourites" id="f">
+        <div id="favorites" class="store">
+            <h4>Add something you love!</h4>
+            <div id="close-f" class="close"><h3>x</h1></div>
+        </div>
+        <img src="mdi-light--cart.png" alt="Cart" id="c">
+        <div id="cart" class="store">
+            <h4>No items in your cart.</h4>
+            <div id="close-c" class="close"><h3>x</h1></div>
+            <a href="../../../products/index.html"><button id="continue-shopping">Continue Shopping</button></a>
+        </div>
+        </div>
+    
+        <script>
+           var accounticon=document.getElementById("a")
+    var accountform=document.getElementById("account")
+    var closea = document.getElementById("close-a")
+    var favicon=document.getElementById("f")
+    var favorites=document.getElementById("favorites")
+    var closef = document.getElementById("close-f")
+    var carticon=document.getElementById("c")
+    var cart=document.getElementById("cart")
+    var closec = document.getElementById("close-c")
+    accounticon.addEventListener("click",function()
+    {
+        accountform.style.display = "block";       
+    }) 
+    closea.addEventListener("click",function()
+    {
+        accountform.style.display = "none"
+    })
+    favicon.addEventListener("click", function()
+    {
+        favorites.style.display = "block";
+        accountform.style.display = "none";
+        cart.stle.display = "none";
+    })   
+    closef.addEventListener("click",function()
+    {
+        favorites.style.display = "none"
+    })
+    carticon.addEventListener("click", function()
+    {
+        cart.style.display = "block";
+        accountform.style.display = "none";
+        favorites.style.display = "none";
+    })   
+    closec.addEventListener("click",function()
+    {
+        cart.style.display = "none"
+    })
+        </script>
+            </div>
+
  <div id="banner">
    
  <!-- navbar -->
@@ -88,6 +161,34 @@
     <a href="../mini bags2/index.html"><div class="categories"><img src="nano diane.png" alt="Mini Bags"></div>Mini Bags</a> 
     <a href="../totes2/index.html" id="wc2"><div  class="categories"><img src="Tote2.png" alt="Totes"></div>Totes</a> 
 </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div id="f1">
+                <div id="icons">
+                    <a href="#"><img src="logos--facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="skill-icons--instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="logos--twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="logos--youtube-icon.png" alt="YouTube"></a>
+                </div>
+                <div id="links">
+                    <a href="../../../home page/index.html">Home</a>
+                    <span>|</span>
+                    <a href="../../../about/index.html">About</a>
+                    <span>|</span>
+                    <a href="../../../contact/index.html">Contact</a>
+                    <span>|</span>
+                    <a href="../../../faqs/index.html">FAQs</a>
+                    <span>|</span>
+                    <a href="../../../products/index.html">Products</a>
+                </div>
+            </div>
+            <div id="f2">
+                <p id="cr">© 2024 BagBag. All rights reserved.</p>
+                <a href="../../../service terms/index.html" id="tc">Service Terms</a>
+                <a href="../../../privacy policy/index.html" id="pp">Privacy Policy</a>
+            </div>
+        </div>
 
 </body>
 </html>

@@ -40,7 +40,7 @@
     left: 0%;
     border-top: 1px #BFBFBF solid;
     border-bottom: 1px #BFBFBF solid;
-    height: 918vw;
+    height: 923vw;
     width: 100vw;
     background: white;
     list-style-type: none;
@@ -104,7 +104,9 @@ hr{
 
 /* products */
 #productss{
-    width: 100vw;
+    position: relative;
+    left: 30px;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -8,6 +8,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+
+<!-- store -->
+<div id="name">
+    <h1>BagBag</h1>
+    <img src="healthicons--person-outline (2).png" alt="Account" id="a">
+    <div id="account" class="store">
+        <div id="close-a" class="close"><h3>x</h1></div>
+        <form>
+            <h4 id="account-access">Get access to your Account</h4>
+            <input type="email" placeholder="E-mail address" required id="email">
+            <input type="password" placeholder="Password" required id="password">
+            <button id="sign-in">Sign in</button>
+       </form>
+       <h5>or continue with</h5>
+       <button id="google"><span style="color: blue;">G</span><span style="color: red;">o</span><span style="color: yellow;">o</span><span style="color: blue;">g</span><span style="color: green;" >l</span><span style="color: red;">e</span></button> 
+       <hr id="hr1" class="hrs">
+        <h4 id="create-account">Don't have an account?</h4>
+            <a href="../sign-up/index.html"><button id="sign-up">Sign up</button></a>
+            <hr id="hr2" class="hrs">
+    </div>
+    <img src="arcticons--heart.png" alt="Favourites" id="f">
+    <div id="favorites" class="store">
+        <h4>Add something you love!</h4>
+        <div id="close-f" class="close"><h3>x</h1></div>
+    </div>
+    <img src="mdi-light--cart.png" alt="Cart" id="c">
+    <div id="cart" class="store">
+        <h4>No items in your cart.</h4>
+        <div id="close-c" class="close"><h3>x</h1></div>
+        <a href="../products/index.html"><button id="continue-shopping">Continue Shopping</button></a>
+    </div>
+    </div>
+
+    <script>
+       var accounticon=document.getElementById("a")
+var accountform=document.getElementById("account")
+var closea = document.getElementById("close-a")
+var favicon=document.getElementById("f")
+var favorites=document.getElementById("favorites")
+var closef = document.getElementById("close-f")
+var carticon=document.getElementById("c")
+var cart=document.getElementById("cart")
+var closec = document.getElementById("close-c")
+accounticon.addEventListener("click",function()
+{
+    accountform.style.display = "block";       
+}) 
+closea.addEventListener("click",function()
+{
+    accountform.style.display = "none"
+})
+favicon.addEventListener("click", function()
+{
+    favorites.style.display = "block";
+    accountform.style.display = "none";
+    cart.stle.display = "none";
+})   
+closef.addEventListener("click",function()
+{
+    favorites.style.display = "none"
+})
+carticon.addEventListener("click", function()
+{
+    cart.style.display = "block";
+    accountform.style.display = "none";
+    favorites.style.display = "none";
+})   
+closec.addEventListener("click",function()
+{
+    cart.style.display = "none"
+})
+    </script>
+
             <!-- navbar -->
             <ul id="navbar">
                 <a href="..//home page/index.html" id="logo"><img src="Collorfull_Modern_Minimalist_Shop_Logo__1_-removebg-preview.png" alt="BagBag" height="90px" width="90px"></a>
@@ -97,22 +170,19 @@
               <div class="contact-info">
                 <h3>Operating Hours</h3>
                 <p style="margin-top: 15px;">Monday - Friday: 8:00 AM - 8:00 PM</p>
-                <p style="margin-top: -10px;">Saturday & Sunday: 10:00 AM - 4:00 PM</p>
+                <p style="margin-top: -10px; margin-bottom: 15px;">Saturday & Sunday: 10:00 AM - 4:00 PM</p>
               </div>
-              
-              
-              
         </div>
     </section>
 
     <!--chat box-->
     <div id="message-icon">
-        <img id="chatbox-img" src="ion--chatbox-outline.png" alt="">
+        <img id="chatbox-img" src="ph--chat-light.png" alt="">
     </div>
     <div id="chat-box">
         <div class="chat-header">
             <h2>Get in Touch</h2>
-            <div id="close"><img src="subway--close-2.png" height="15px" width="15px" alt=""></div>
+            <div id="close"><h3>x</h3></div>
         </div>
         <div class="chat-body">
             <textarea id="chat-message" placeholder="How can we assist you?"></textarea>
@@ -137,5 +207,33 @@ close.addEventListener("click",function()
     chatbox.style.display = "none"
 })
     </script>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="f1">
+            <div id="icons">
+                <a href="#"><img src="logos--facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="skill-icons--instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="logos--twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="logos--youtube-icon.png" alt="YouTube"></a>
+            </div>
+            <div id="links">
+                <a href="../home page/index.html">Home</a>
+                <span>|</span>
+                <a href="../about/index.html">About</a>
+                <span>|</span>
+                <a href="../contact/index.html">Contact</a>
+                <span>|</span>
+                <a href="../faqs/index.html">FAQs</a>
+                <span>|</span>
+                <a href="../products/index.html">Products</a>
+            </div>
+        </div>
+        <div id="f2">
+            <p id="cr">© 2024 BagBag. All rights reserved.</p>
+            <a href="../service terms/index.html" id="tc">Service Terms</a>
+            <a href="../privacy policy/index.html" id="pp">Privacy Policy</a>
+        </div>
+    </div>
 </body>
 </html>

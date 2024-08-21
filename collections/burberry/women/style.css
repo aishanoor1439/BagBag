@@ -63,7 +63,7 @@
 #products ul li a {
     display: block;
     background-color: transparent;
-    color: grey;
+    color: #333333;
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.4s, text-decoration 0.4s;
@@ -104,7 +104,9 @@ margin-top: 20px;
 
 /* products */
 #productss{
-    width: 100vw;
+    position: relative;
+    left: 2px;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
